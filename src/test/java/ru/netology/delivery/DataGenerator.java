@@ -1,4 +1,4 @@
-package ru.netology.delivery.data;
+package ru.netology.delivery;
 
 import com.github.javafaker.Faker;
 import lombok.Value;
@@ -14,8 +14,8 @@ public class DataGenerator {
 
 
     public static String generateCity(String locale) {
-        var cities = new String[]{"Москва", "Уфа", "Санкт-Петербург", "Казань", "Самара", "Йошкар-Ола", "Майкоп", " Ижевск",
-                " Барнаул", "Краснодар"};
+        var cities = new String[]{"Москва", "Уфа", "Санкт-Петербург", "Казань", "Самара", "Йошкар-Ола", "Майкоп", "Ижевск",
+                "Барнаул", "Краснодар"};
         return cities[new Random().nextInt(cities.length)];
     }
 
